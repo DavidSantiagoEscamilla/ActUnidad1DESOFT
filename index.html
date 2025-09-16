@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PMV - Restaurante (Prototype)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="brand">Restaurante · PMV</h1>
+      <nav>
+        <a href="#reservas">Reservas</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#reportes">Reportes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h2>Sistema de gestión - Reservas y Pedidos</h2>
+      <p>Mockup funcional para la gestión de mesas, reservas y pedidos en tiempo real.</p>
+      <div class="cta-row">
+        <a class="btn" href="#reservas">Crear reserva</a>
+        <a class="btn outline" href="#pedidos">Tomar pedido</a>
+      </div>
+    </section>
+
+    <section id="reservas" class="card">
+      <h3>Reservas</h3>
+      <form class="form-grid">
+        <label>Nombre
+          <input placeholder="Nombre completo" />
+        </label>
+        <label>Teléfono
+          <input placeholder="+57 3XX XXX XXXX" />
+        </label>
+        <label>Fecha y hora
+          <input type="datetime-local" />
+        </label>
+        <label>Personas
+          <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        </label>
+        <label>Mesa (opcional)
+          <select><option>Mesa 1</option><option>Mesa 2</option><option>Mesa 3</option></select>
+        </label>
+        <div class="actions">
+          <button class="btn">Reservar</button>
+          <button class="btn outline" type="button">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="pedidos" class="card">
+      <h3>Tomar pedido</h3>
+      <div class="order-grid">
+        <div class="menu">
+          <div class="menu-item">
+            <strong>Arepa de queso</strong>
+            <p class="muted">Arepa tradicional con queso rallado</p>
+            <div class="menu-actions"><button class="btn small">Agregar</button><span class="price">COP 8.000</span></div>
+          </div>
+          <div class="menu-item">
+            <strong>Bandeja Paisa</strong>
+            <p class="muted">Frijoles, arroz, carne, chicharrón, huevo</p>
+            <div class="menu-actions"><button class="btn small">Agregar</button><span class="price">COP 28.000</span></div>
+          </div>
+          <div class="menu-item">
+            <strong>Ensalada César</strong>
+            <p class="muted">Lechuga, pollo, parmesano</p>
+            <div class="menu-actions"><button class="btn small">Agregar</button><span class="price">COP 15.000</span></div>
+          </div>
+        </div>
+        <div class="cart">
+          <h4>Pedido actual</h4>
+          <div class="cart-list">
+            <p class="muted">No hay artículos aún.</p>
+          </div>
+          <div class="cart-total">
+            <div>Total: <strong>COP 0</strong></div>
+            <button class="btn">Enviar a cocina</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reportes" class="card">
+      <h3>Reportes</h3>
+      <p class="muted">Exportar ventas diarias en PDF o ver resumen en pantalla.</p>
+      <div class="report-actions">
+        <button class="btn">Generar PDF</button>
+        <button class="btn outline">Ver resumen</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Restaurante · PMV — Documento de entrega</small>
+      <small>David Santiago · Universidad de Cartagena</small>
+    </div>
+  </footer>
+</body>
+</html>
